@@ -35,6 +35,7 @@ export default {
     .textInfo
       text-align: center
       color: white
+      margin-bottom: 15px
 
       span
         margin: 0 20px
