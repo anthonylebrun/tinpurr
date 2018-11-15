@@ -1,8 +1,8 @@
 import axios from 'axios'
 
-const CatAPI = function(apiKey = '') {
+const CatAPI = function(baseURL, apiKey = '') {
   this.httpClient = axios.create({
-    baseURL: 'https://api.thedogapi.com/v1/',
+    baseURL,
     headers: { 'x-api-key': apiKey }
   })
 }
@@ -31,4 +31,7 @@ CatAPI.prototype.getFavorites = function(subID) {
   })
 }
 
-export default new CatAPI(process.env.VUE_APP_CAT_API_KEY)
+export default new CatAPI(
+  process.env.VUE_APP_CAT_API_BASE_URL,
+  process.env.VUE_APP_CAT_API_KEY
+)
