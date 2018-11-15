@@ -1,5 +1,9 @@
 # tinpurr
 
+Because what the silicon valley hasn't invented yet is tinder for cats.
+
+Live site at: https://tinpurr.netlify.com
+
 ## Project setup
 ```
 npm install
