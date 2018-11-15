@@ -12,14 +12,14 @@
 
 <script>
 export default {
-  props: ["current", "total"],
+  props: ['current', 'total'],
 
   computed: {
     progress() {
       if (this.current == 0) {
         return '0%'
       } else if (this.current < this.total) {
-        return `${(this.current / this.total * 100)}%`
+        return `${(this.current / this.total) * 100}%`
       } else {
         return '100%'
       }

@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  props: ["left", "right"],
+  props: ['left', 'right'],
   data() {
     return {
       swipedLeft: false,

@@ -14,7 +14,7 @@ export default {
     RetroBlink
   },
 
-  props: ["title"]
+  props: ['title']
 }
 </script>
 

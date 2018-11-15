@@ -1,9 +1,9 @@
 import axios from 'axios'
 
-const CatAPI = function(apiKey = "") {
+const CatAPI = function(apiKey = '') {
   this.httpClient = axios.create({
     baseURL: 'https://api.thedogapi.com/v1/',
-    headers: {'x-api-key': apiKey}
+    headers: { 'x-api-key': apiKey }
   })
 }
 

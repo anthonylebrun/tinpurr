@@ -67,7 +67,7 @@ export default {
         this.catQueue.push(...data)
 
         // Preloads images in browser cache
-        data.forEach((cat) => {
+        data.forEach(cat => {
           new Image().src = cat.url
         })
       })
@@ -88,7 +88,9 @@ export default {
     },
 
     notifyLoading() {
-      alert("OH HAI. PLZ BE PATIENT. WE ARE LOADING TEH KITTEHS. MAYBE TEH CAT API ID DOWN? :'( WE BLAME TEH DOGZ!")
+      alert(
+        "OH HAI. PLZ BE PATIENT. WE ARE LOADING TEH KITTEHS. MAYBE TEH CAT API ID DOWN? :'( WE BLAME TEH DOGZ!"
+      )
     },
 
     rejectCat() {
@@ -114,7 +116,10 @@ export default {
     // Transition to next page once the user has favorited enough cats
     faved(value) {
       if (value >= this.$options.maxFaves) {
-        this.$router.push({ name: 'faves', params: { sessionId: this.sessionId }})
+        this.$router.push({
+          name: 'faves',
+          params: { sessionId: this.sessionId }
+        })
       }
     }
   },
